@@ -48,7 +48,7 @@ def play(board)
     spent_index = turn(board)
     # remove the spent_index
     turns.delete(spent_index)
-  
+  end
  
 end  
   
