@@ -38,9 +38,7 @@ end
 # Define your play method below
 
 def play(board)
-  current_player = "X"
   turn(board)
-  
 end  
   
   
