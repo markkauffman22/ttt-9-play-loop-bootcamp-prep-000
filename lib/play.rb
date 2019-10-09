@@ -46,7 +46,7 @@ def play(board)
     spent_input = spent_index + 1
     
     # remove the spent_input
-    turns.delete(spent_index)
+    turns.delete(spent_input)
     
     puts "SPENT_INPUT", spent_input
       print "turns.length: "
