@@ -12,4 +12,4 @@ display_board(board)
 #play(turn_num, current_player)
 # current_player = "X"  is default in move()
 
-play()
+play(board)
