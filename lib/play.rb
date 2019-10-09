@@ -41,9 +41,9 @@ def play(board)
   game_over = false
   # for later ... current_player = "X"
   
-  while !game_over 
-    turn(board)
-  end  
+  
+  result = turn(board)
+ 
 end  
   
   
