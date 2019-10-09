@@ -40,9 +40,9 @@ end
 def play(board)
   game_over = false
   current_player = "X"
-  
+  turns = [1,2,3,4,5,6,7,8,9]
   while !game_over 
-    turn(board, current_player)
+    turn(board)
   end  
 end  
   
