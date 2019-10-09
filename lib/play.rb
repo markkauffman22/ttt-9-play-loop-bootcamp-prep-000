@@ -30,6 +30,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
+    return index
   else
     turn(board)
   end
@@ -42,7 +43,8 @@ def play(board)
   # for later ... current_player = "X"
   
   turns = [1,2,3,4,5,6,7,8,9]
-  result = turn(board)
+  spent_index = turn(board)
+  turns.rem
  
 end  
   
