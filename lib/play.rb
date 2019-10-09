@@ -43,7 +43,9 @@ def play(board)
   
   while turns.length > 0
     spent_index = turn(board)
-    # remove the spent_index
+    spent_input = spent_index + 1
+    # remove the spent_input
+    
     turns.delete(spent_index)
     
     puts "SPENT_InPUT", spent_input
