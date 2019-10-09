@@ -28,7 +28,7 @@ def turn(board, current_player = "X")
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index)
+    move(board, index, current_player)
     display_board(board)
   else
     turn(board)
@@ -38,7 +38,11 @@ end
 # Define your play method below
 
 def play(board)
-  turn(board)
+  game_over = false
+  current_player = "X"
+  
+  while !game_over 
+  turn(board, current_player)
 end  
   
   
