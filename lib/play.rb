@@ -44,13 +44,11 @@ def play(board)
   while turns.length > 0
     spent_index = turn(board)
     spent_input = spent_index + 1
-    # remove the spent_input
     
+    # remove the spent_input
     turns.delete(spent_index)
     
-    puts "SPENT_InPUT", spent_input
-   
-
+    puts "SPENT_INPUT", spent_input
       print "turns.length: "
       puts turns.length
       puts turns
