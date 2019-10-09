@@ -30,7 +30,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
-    return input
+    return index
   else
     turn(board)
   end
@@ -42,9 +42,9 @@ def play(board)
   turns = [1,2,3,4,5,6,7,8,9]
   
   while turns.length > 0
-    spent_input = turn(board)
-    # remove the spent_input
-    turns.delete(spent_input)
+    spent_index = turn(board)
+    # remove the spent_index
+    turns.delete(spent_index)
     
     puts "SPENT_InPUT", spent_input
    
