@@ -42,7 +42,8 @@ def play(board)
   current_player = "X"
   
   while !game_over 
-  turn(board, current_player)
+    turn(board, current_player)
+  end  
 end  
   
   
