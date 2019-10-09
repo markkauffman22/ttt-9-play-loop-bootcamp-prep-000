@@ -39,8 +39,8 @@ end
 
 def play(board)
   game_over = false
-  current_player = "X"
-  turns = [1,2,3,4,5,6,7,8,9]
+  # for later ... current_player = "X"
+  
   while !game_over 
     turn(board)
   end  
