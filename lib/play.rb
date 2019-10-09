@@ -39,13 +39,11 @@ end
 # Define your play method below
 
 def play(board)
-  game_over = false
-  # for later ... current_player = "X"
-  
   turns = [1,2,3,4,5,6,7,8,9]
   
   while turns.length > 0
     spent_index = turn(board)
+    puts "SPENT_INDEX", spent_index
     # remove the spent_index
     turns.delete(spent_index)
   end
